@@ -17,7 +17,7 @@ $asset = $release.assets | Where-Object { $_.name -eq $filename }
 if ($asset) {
     # Get the version of the file on GitHub
     $githubVersion = $release.tag_name
-
+    
     # Get the version of the local file
     $localFile = "$folder\$filename"
     if (Test-Path -Path $localFile) {
