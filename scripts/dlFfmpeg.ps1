@@ -21,6 +21,12 @@ Invoke-WebRequest -Uri $url -OutFile $output
 # Extract the downloaded 7z file
 7z x $output -o".\assets"
 
+# Get the name of the extracted directory
+$extractedDir = Get-ChildItem -Path ".\assets" -Directory | Select-Object -First 1
+
+# Rename the extracted directory to "ffmpeg"
+Rename-Item -Path $extractedDir.FullName -NewName "ffmpeg"
+
 # Remove the downloaded 7z file
 Remove-Item -Path $output
 

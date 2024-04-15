@@ -1,5 +1,7 @@
 @echo off
 
+cd /d "%~dp0..\assets"
+
 :MENU
 cls
 echo What do you want to download?: 
@@ -17,16 +19,16 @@ pause
 goto MENU
 
 :VIDEO
-call :DOWNLOAD "video" "-S "res:1080" --remux-video mp4"
+call :DOWNLOAD "../downloads/video" "-S "res:1080" --remux-video mp4"
 goto REPEAT
 
 :AUDIO
-call :DOWNLOAD "audio" "-x --audio-format mp3"
+call :DOWNLOAD "../downloads/audio" "-x --audio-format mp3"
 goto REPEAT
 
 :DOWNLOAD
 set /p input=Input link: 
-yt-dlp -P ".\%~1" -o "%%(title)s.%%(ext)s" %~2 %input% --ffmpeg-location "./ffmpeg" || echo Download failed!
+yt-dlp -P ".\%~1" -o "%%(title)s.%%(ext)s" %~2 %input% || echo Download failed!
 goto :eof
 
 :REPEAT
