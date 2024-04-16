@@ -28,8 +28,8 @@ The git program checks the current files you have for the project is up to date.
 If you ever find a way to integrate 7z in command line. Please don't hesitate to add an issue or a pull request to the repository.
 
 ### Planned features in the feature?
-Batch downloading
-Selecting the quality of the video downloaded
+- Batch downloading
+- Selecting the quality of the video downloaded
 
 
 
