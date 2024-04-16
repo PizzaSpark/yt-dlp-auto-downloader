@@ -1,4 +1,4 @@
 *.exe
 *.mp3
 *.mp4
-*/assets
+/assets/*
