@@ -1,11 +1,5 @@
 function main {
-
-    $user = "yt-dlp"
-    $repo = "yt-dlp"
-    $filename = "yt-dlp.exe"
-    $filePath = "assets"
-
-    CheckIfUpToDate $user $repo $filePath
+    CheckIfUpToDate
 }
 
 function CheckIfUpToDate() {
