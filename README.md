@@ -23,6 +23,9 @@ You actually don't need to download NanaZip. It will just make your life easier 
 ## Why do I need to download Git?
 The git program checks the current files you have for the project is up to date. It will update the files if it's not up to date so you can get the latest bug fixes and features.
 
+## Im confused how to install git
+Just agree with everything. Most of the time, the default selected options in the installation are usually the best options. Rare cases you need to have a custom installation for it.
+
 ## Additional statements
 ### 7z integration in system?
 If you ever find a way to integrate 7z in command line. Please don't hesitate to add an issue or a pull request to the repository.
