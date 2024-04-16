@@ -23,4 +23,4 @@ You actually don't need to download NanaZip. It will just make your life easier 
 If you ever find a way to integrate 7z in command line. Please don't hesitate to add an issue or a pull request to the repository.
 
 
-## Now just run the `run.bat` and ENJOY!
+## Now just [download](https://github.com/PizzaSpark/yt-dlp-auto-downloader/archive/refs/heads/main.zip) the repo, run the `run.bat` and ENJOY!
