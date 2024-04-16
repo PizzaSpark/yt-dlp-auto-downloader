@@ -1,5 +1,12 @@
 # YT-DLP Command Line Auto Downloader
 
+## Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [FAQs](#faqs)
+- [Additional Information](#additional-information)
+- [Getting Started](#getting-started)
+
 ## Features
 - Download videos or audios
 - Supports batch downloading:
