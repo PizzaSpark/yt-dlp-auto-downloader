@@ -23,7 +23,7 @@ pause
 goto MENU
 
 :VIDEO
-call :DOWNLOAD "../downloads/video" "%%(title)s.%%(ext)s" "-S "res:1080" --remux-video mp4"
+call :DOWNLOAD "../downloads/video" "-S "res:1080" --remux-video mp4"
 goto REPEAT
 
 :AUDIO
