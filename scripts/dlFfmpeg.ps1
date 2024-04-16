@@ -18,8 +18,15 @@ $output = ".\assets\ffmpeg.7z"
 # Use Invoke-WebRequest to download the file
 Invoke-WebRequest -Uri $url -OutFile $output
 
-# Extract the downloaded 7z file
-7z x $output -o".\assets"
+# Check if 7z is installed
+try {
+    $7z = Get-Command 7z -ErrorAction Stop
+    # Extract the downloaded 7z file
+    & $7z x $output -o".\assets"
+} catch {
+    Write-Host "7z is not installed or not accessible from the command line. Please manually extract the downloaded file."
+    Read-Host "Press Enter when you have finished extracting the file"
+}
 
 # Get the name of the extracted directory
 $extractedDir = Get-ChildItem -Path ".\assets" -Directory | Select-Object -First 1
