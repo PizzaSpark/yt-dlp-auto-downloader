@@ -21,20 +21,23 @@ if ($asset) {
     # Define the local file path
     $localFile = Join-Path $folder $filename
 
-    # Get the version of the local file if it exists, otherwise set to "0"
-    $localVersion = if (Test-Path -Path $localFile) {
+    # Check if the local file exists
+    if (Test-Path -Path $localFile) {
         Write-Output "yt-dlp already exists."
-        (Get-Command $localFile).FileVersionInfo.ProductVersion
-    } else {
-        "0"
-    }
 
-    # If the GitHub version is newer, download the asset
-    if ($githubVersion -gt $localVersion) {
-        Write-Output "The current yt-dlp is outdated, downloading the latest version."
-        Invoke-WebRequest -Uri $asset.browser_download_url -OutFile $localFile
+        # Get the version of the local file
+        $localVersion = (Get-Command $localFile).FileVersionInfo.ProductVersion
+
+        # If the GitHub version is newer, download the asset
+        if ($githubVersion -gt $localVersion) {
+            Write-Output "The current yt-dlp is outdated, downloading the latest version."
+            Invoke-WebRequest -Uri $asset.browser_download_url -OutFile $localFile
+        } else {
+            Write-Output "yt-dlp is up to date."
+        }
     } else {
-        Write-Output "yt-dlp is up to date."
+        Write-Output "yt-dlp does not exist, downloading the latest version."
+        Invoke-WebRequest -Uri $asset.browser_download_url -OutFile $localFile
     }
 } else {
     Write-Output "No asset found with the name $filename."
