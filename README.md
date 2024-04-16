@@ -39,4 +39,4 @@ If you ever find a way to integrate 7z in command line. Please don't hesitate to
 
 
 
-## Now just [download](https://github.com/PizzaSpark/yt-dlp-auto-downloader/archive/refs/heads/main.zip) the repo, run the `run.bat` and ENJOY!
+## Now just [download](https://github.com/PizzaSpark/yt-dlp-auto-downloader/releases/download/1/clone.bat) the repo, run the `clone.bat` to clone the repository and ENJOY!
