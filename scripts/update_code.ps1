@@ -1,7 +1,5 @@
 function main {
     CheckIfUpToDate
-
-    Read-Host "Press Enter to continue..."
 }
 
 function CheckIfUpToDate() {
