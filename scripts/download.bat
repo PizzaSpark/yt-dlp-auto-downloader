@@ -27,18 +27,12 @@ call :DOWNLOAD "../downloads/video" "%%(title)s.%%(ext)s" "-S "res:1080" --remux
 goto REPEAT
 
 :AUDIO
-call :DOWNLOAD "../downloads/audio" "%%(title)s.%%(ext)s" "-x --audio-format mp3"
+call :DOWNLOAD "../downloads/audio" "-x --audio-format mp3"
 goto REPEAT
-
-:BATCH_VIDEO
-call :DOWNLOAD "../downloads/video" "%%(playlist)s/%%(title)s.%%(ext)s" "-S "res:1080" --remux-video mp4"
-
-:BATCH_AUDIO
-call :DOWNLOAD "../downloads/audio" "%%(playlist)s/%%(title)s.%%(ext)s" "-x --audio-format mp3"
 
 :DOWNLOAD
 set /p input=Input link: 
-yt-dlp -P ".\%~1" -o %~2 %~3 %input% || echo Download failed!
+yt-dlp -P ".\%~1" -o "%%(title)s.%%(ext)s" "%~2" %input% || echo Download failed!
 goto :eof
 
 :REPEAT
