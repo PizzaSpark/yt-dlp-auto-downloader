@@ -13,6 +13,8 @@ function main {
     DownloadFile $url $output
     ExtractAndMoveFiles $output
     CleanAssetsFolder $filesExist
+
+    Read-Host "Press Enter to continue..."
 }
 
 function CheckExeFilesExist {
@@ -37,8 +39,7 @@ function CheckFilesExistAndPrompt {
             Write-Host "The ffmpeg files exist. Skipping-"
             break
         } else {
-            Write-Host "The ffmpeg files do not exist. Please double check if the exe files are in the assets folder directly"
-            Read-Host "Press any key to check again"
+            HandleManualExtraction
         }
     }
 }
