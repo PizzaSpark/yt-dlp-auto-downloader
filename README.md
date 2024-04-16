@@ -6,6 +6,7 @@ Name  | Download
 ------------- | -------------
 Python  | [Link](https://www.python.org/downloads/)
 NanaZip (7Zip fork)  | [Link](https://www.microsoft.com/store/productId/9N8G7TSCL18R?ocid=pdpshare)
+Git  | [Link](https://git-scm.com/download/win)
 
 ## Why do I need to install Python?
 The code uses yt-dlp as the video/audio downloader and yt-dlp uses Python.
@@ -19,8 +20,17 @@ Yes! NanaZip is a fork of 7Zip meaning behind the scenes, it's just the 7Zip sou
 ## Do I really need to download NanaZip? Can't I just use other extractor programs?
 You actually don't need to download NanaZip. It will just make your life easier during the whole process of installation with this program. If you ever decided you don't want NanaZip, make sure if you extract the file, move `ffmpeg ffprobe ffplay` in the assets folder directly.
 
+## Why do I need to download Git?
+The git program checks the current files you have for the project is up to date. It will update the files if it's not up to date so you can get the latest bug fixes and features.
+
+## Additional statements
 ### 7z integration in system?
 If you ever find a way to integrate 7z in command line. Please don't hesitate to add an issue or a pull request to the repository.
+
+### Planned features in the feature?
+Batch downloading
+Selecting the quality of the video downloaded
+
 
 
 ## Now just [download](https://github.com/PizzaSpark/yt-dlp-auto-downloader/archive/refs/heads/main.zip) the repo, run the `run.bat` and ENJOY!
