@@ -1,18 +1,21 @@
 function main {
     CheckIfUpToDate
+
+    Read-Host "Press Enter to continue..."
 }
 
 function CheckIfUpToDate() {
     try {
         # Navigate to the repository directory
-        Set-Location ..
+        Set-Location .
+        Write-Host "Current location: $(Get-Location)"
 
         # Fetch the latest information from the remote repository
         git fetch
 
         # Compare the local HEAD commit with the remote HEAD commit
         $local = git rev-parse HEAD
-        $remote = git rev-parse @{u}
+        $remote = & cmd /c "git rev-parse @{u}"
 
         if ($local -eq $remote) {
             Write-Host "The local repository is up-to-date with the remote repository."
