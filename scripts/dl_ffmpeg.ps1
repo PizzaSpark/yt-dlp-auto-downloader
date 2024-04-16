@@ -58,7 +58,7 @@ function ExtractAndMoveFiles($output) {
         $extractedDir = Get-ChildItem -Path ".\assets" -Directory | Select-Object -First 1
         Rename-Item -Path $extractedDir.FullName -NewName "ffmpeg"
         Move-Item -Path ".\assets\ffmpeg\bin\*.exe" -Destination ".\assets"
-        Remove-Item -Path ".\assets\ffmpeg" -Recurse -Force
+        CleanAssetsFolder
     } catch {
         Write-Host "7z is not installed or not accessible from the command line. Please manually extract the downloaded file."
         HandleManualExtraction
