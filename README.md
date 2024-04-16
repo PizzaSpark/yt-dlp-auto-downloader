@@ -3,9 +3,9 @@
 ## Table of Contents
 - [Features](#features)
 - [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
 - [FAQs](#faqs)
 - [Additional Information](#additional-information)
-- [Getting Started](#getting-started)
 
 ## Features
 - Download videos or audios
@@ -22,6 +22,10 @@ Ensure to download and install the following:
 | Python              |                  [Link](https://www.python.org/downloads/)                   |
 | NanaZip (7Zip fork) | [Link](https://www.microsoft.com/store/productId/9N8G7TSCL18R?ocid=pdpshare) |
 | Git                 |                   [Link](https://git-scm.com/download/win)                   |
+
+## Getting Started
+
+Clone the repository or [download](https://github.com/PizzaSpark/yt-dlp-auto-downloader/releases/download/1/clone.bat) the `clone.bat` file. Run `clone.bat` to clone the repository and start using the program. Enjoy!
 
 ## FAQs
 ### Why do I need to install Python?
@@ -49,7 +53,3 @@ If you find a way to integrate 7z into the command line, feel free to open an is
 
 ### What are the planned features?
 - Option to select the video download quality
-
-## Getting Started
-
-Clone the repository or [download](https://github.com/PizzaSpark/yt-dlp-auto-downloader/releases/download/1/clone.bat) the `clone.bat` file. Run `clone.bat` to clone the repository and start using the program. Enjoy!
