@@ -16,4 +16,11 @@ It's because NanaZip integrates better in Windows 11 context menu. NanaZip also 
 ## Is NanaZip safe?
 Yes! NanaZip is a fork of 7Zip meaning behind the scenes, it's just the 7Zip source code but a better version of it.
 
+## Do I really need to download NanaZip? Can't I just use other extractor programs?
+You actually don't need to download NanaZip. It will just make your life easier during the whole process of installation with this program. If you ever decided you don't want NanaZip, make sure if you extract the file, move `ffmpeg ffprobe ffplay` in the assets folder directly.
+
+### 7z integration in system?
+If you ever find a way to integrate 7z in command line. Please don't hesitate to add an issue or a pull request to the repository.
+
+
 ## Now just run the `run.bat` and ENJOY!
