@@ -12,7 +12,6 @@ function main {
 
     DownloadFile $url $output
     ExtractAndMoveFiles $output
-    CleanAssetsFolder $filesExist
 
     Read-Host "Press Enter to continue..."
 }
@@ -37,6 +36,7 @@ function CheckFilesExistAndPrompt {
         $filesExist = CheckExeFilesExist
         if ($filesExist) {
             Write-Host "The ffmpeg files exist. Skipping-"
+            CleanAssetsFolder
             break
         } else {
             HandleManualExtraction
@@ -65,17 +65,25 @@ function ExtractAndMoveFiles($output) {
     }
 }
 
-function CleanAssetsFolder($filesExist) {
+function CleanAssetsFolder() {
     $files = Get-ChildItem -Path ".\assets"
+    $excludedFiles = "yt-dlp.exe", "ffmpeg.exe", "ffplay.exe", "ffprobe.exe"
     foreach ($file in $files) {
-        if ($filesExist -and $file.Name -ne "yt-dlp.exe") {
+        if ($file.Name -notin $excludedFiles) {
             try {
-                Remove-Item -Path $file.FullName -ErrorAction Stop
+                if ($file.PSIsContainer) {
+                    # If the item is a directory, delete it and its contents
+                    Remove-Item -Path $file.FullName -Recurse -Force -Confirm:$false
+                } else {
+                    # If the item is a file, delete it
+                    Remove-Item -Path $file.FullName -Force
+                }
             } catch {
                 Write-Host "An error occurred while trying to delete the file: $_"
             }
         }
     }
+    Write-Host "The assets folder has been cleaned."
 }
 
 function HandleManualExtraction {

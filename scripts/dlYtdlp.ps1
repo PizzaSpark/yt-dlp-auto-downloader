@@ -34,7 +34,7 @@ if ($asset) {
         Write-Output "The current yt-dlp is outdated, downloading the latest version."
         Invoke-WebRequest -Uri $asset.browser_download_url -OutFile $localFile
     } else {
-        Write-Output "The local file is up to date."
+        Write-Output "yt-dlp is up to date."
     }
 } else {
     Write-Output "No asset found with the name $filename."
