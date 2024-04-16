@@ -2,7 +2,9 @@
 
 ## FEATURES
 - Download videos or audios
-- Supports batch downloading (tested with YouTube playlists; simply input the link as usual)
+- Supports batch downloading:
+  - YouTube playlists
+  - Alternatively, paste multiple video links, separating them with spaces. For example: ytlink1 ytlink2
 - Segregates downloaded files into the 'downloads' folder within the project directory (downloaded videos go to ./downloads/video and the same applies for audio)
 
 ## MAKE SURE TO DOWNLOAD THE FOLLOWING
