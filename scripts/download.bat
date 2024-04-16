@@ -8,8 +8,6 @@ echo What do you want to download?:
 echo.
 echo 1. Video
 echo 2. Audio
-echo 3. Video Playlist
-echo 4. Audio Playlist
 echo 3. Exit
 echo.
 set /p choice=Choice: 
