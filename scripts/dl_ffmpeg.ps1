@@ -12,8 +12,6 @@ function main {
 
     DownloadFile $url $output
     ExtractAndMoveFiles $output
-
-    Read-Host "Press Enter to continue..."
 }
 
 function CheckExeFilesExist {
