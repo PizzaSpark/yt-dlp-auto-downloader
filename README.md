@@ -2,11 +2,11 @@
 
 
 ## MAKE SURE TO DOWNLOAD THE FOLLOWING
-Name  | Download
-------------- | -------------
-Python  | [Link](https://www.python.org/downloads/)
-NanaZip (7Zip fork)  | [Link](https://www.microsoft.com/store/productId/9N8G7TSCL18R?ocid=pdpshare)
-Git  | [Link](https://git-scm.com/download/win)
+| Name                |                                   Download                                   |
+| ------------------- | :--------------------------------------------------------------------------: |
+| Python              |                  [Link](https://www.python.org/downloads/)                   |
+| NanaZip (7Zip fork) | [Link](https://www.microsoft.com/store/productId/9N8G7TSCL18R?ocid=pdpshare) |
+| Git                 |                   [Link](https://git-scm.com/download/win)                   |
 
 ## Why do I need to install Python?
 The code uses yt-dlp as the video/audio downloader and yt-dlp uses Python.
