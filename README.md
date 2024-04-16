@@ -37,6 +37,8 @@ If you ever find a way to integrate 7z in command line. Please don't hesitate to
 ### Planned features in the feature?
 - Selecting the quality of the video downloaded
 
-
+------------
+------------
+------------
 
 ## Now just clone the repository or [download](https://github.com/PizzaSpark/yt-dlp-auto-downloader/releases/download/1/clone.bat) the file to clone the repo, run the `clone.bat` to clone the repository and ENJOY!
