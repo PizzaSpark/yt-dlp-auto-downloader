@@ -1,5 +1,9 @@
 # YT-DLP Command Line Auto Downloader
 
+## FEATURES
+- Download videos or audios
+- Supports batch downloading (tested with YouTube playlists; simply input the link as usual)
+- Segregates downloaded files into the 'downloads' folder within the project directory (downloaded videos go to ./downloads/video and the same applies for audio)
 
 ## MAKE SURE TO DOWNLOAD THE FOLLOWING
 | Name                |                                   Download                                   |
@@ -31,7 +35,6 @@ Just agree with everything. Most of the time, the default selected options in th
 If you ever find a way to integrate 7z in command line. Please don't hesitate to add an issue or a pull request to the repository.
 
 ### Planned features in the feature?
-- Batch downloading
 - Selecting the quality of the video downloaded
 
 
