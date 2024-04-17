@@ -41,7 +41,7 @@ Yes, NanaZip is a fork of 7Zip. It uses the same source code as 7Zip, but with a
 While NanaZip is not required, it simplifies the installation process. If you choose not to use NanaZip, ensure that you move `ffmpeg`, `ffprobe`, and `ffplay` from the assets folder after extraction.
 
 ### Why do I need to download Git?
-Git ensures your project files are up-to-date by fetching the latest bug fixes and features.
+Git ensures your project files are up-to-date by fetching the latest bug fixes and features. Additionally, Git allows you to clone the repository to your local machine which is necessary for receiving the updates.
 
 ### How do I install Git?
 During installation, accept the default options as they are typically the best choices. Custom installation is rarely necessary.
